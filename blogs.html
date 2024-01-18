@@ -111,6 +111,66 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </a>    
                     </ul>
 
+    <style>
+        .ad-banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 20%;
+            left: 20%;
+            right: 10%;
+            bottom: 10%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 9999;
+            width: 44vh;
+            height: 30vh;
+        }
+
+        #im{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 20%;
+            left: 20%;
+            right: 10%;
+            bottom: 10%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 9999;
+            width: 40vh;
+            height: 30vh;
+        }
+        
+        .cut-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+
+    <div class="ad-banner" style="background-image: url('./images/Digi.jpg');">
+        <button class="cut-button" onclick="closeAd()"><b style="color: red;">X</b></button>
+        <a href="https://beacons.ai/digipodium/majorprojecttraining2024" target="_blank">
+            <img src="./images/Digi.jpg" id="im" alt="" srcset="">
+        </a>
+    </div>
+
+    <script>
+        function closeAd() {
+            var adBanner = document.querySelector('.ad-banner');
+            adBanner.style.display = 'none';
+        }
+    </script>
                     <!-- <select name="" id="">
                         
                         <option value="">
